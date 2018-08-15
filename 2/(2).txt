@@ -1,0 +1,20 @@
+CREATE DATABASE db;
+USE db;
+CREATE TABLE table_authors(
+id_author int(11) NOT NULL auto_increment,
+author text,
+id_book int(11) default NULL,
+PRIMARY KEY(id_author)
+)
+TYPE MyLSAM;
+CREATE TABLE table_books( 
+id_book int(11) NOT NULL auto_increment,
+book text,
+id_author int(11) default NULL,
+PRIMARY KEY(id_book)
+)
+TYPE MyLSAM;
+SELECT id_author,
+author,
+FROM table_authors;
+WHERE book<7;
