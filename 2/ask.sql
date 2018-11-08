@@ -1,0 +1,1 @@
+select authors.* from authors join books_and_authors on books_and_authors.id_author=authors.id group by books_and_authors.id_author having count(*) < 7
